@@ -14,7 +14,7 @@ def modulate(val, mod, sat): #color lightening/darkening
     b=int(val[5:7], 16)/255.0
     h,l,s=colorsys.rgb_to_hls(r, g, b)
     l=max(0.0, min(1.0, l*mod)) #bounds on brightness
-    s=max(0.0, min(1.0, s*sat/(mod))) #darker=more saturated
+    s=max(0.0, min(1.0, s*sat*0.8/(mod))) #darker=more saturated
     r, g, b=colorsys.hls_to_rgb(h, l, s)
     r=f"{int(r * 255):02x}"
     g=f"{int(g * 255):02x}"
