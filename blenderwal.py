@@ -27,7 +27,7 @@ def apply_colors(home, workingdir, blenderversion):
     except:
         print("Couldn't load Pywal colors :(")
         sys.exit(1)
-     colors=data["colors"]
+    colors=data["colors"]
     tempdict=data["special"]
     colors["background"]=tempdict["background"]
     colors["foreground"]=tempdict["foreground"]
