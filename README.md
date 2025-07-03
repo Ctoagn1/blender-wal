@@ -13,3 +13,11 @@ Move the script and xml to a directory of your choosing- it should work, as long
 **Dependencies:**  Blender, python, and pywal. Which, if you're interested in using this, you probably already have.
 
 **Features:** You can pass `-a` or `--axis` as an argument to the script in order to change the xyz-axes to fit the theme. It's off by default, as I didn't want to make it too intrusive. 
+
+# Images 
+
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/purple.png?raw=true)
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/red.png?raw=true)
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/yellow-green.png?raw=true)
+
+
