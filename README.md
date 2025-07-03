@@ -12,7 +12,7 @@ Move the script and xml to a directory of your choosing- it should work, as long
 
 **Dependencies:**  Blender, python, and pywal. Which, if you're interested in using this, you probably already have.
 
-**Features:** You can pass `-a` or `--axis` as an argument to the script in order to change the xyz-axes and grid to fit the theme. It's off by default, as I didn't want to make it too intrusive (though personally, I prefer it on).
+**Features:** You can pass `-a` or `--axis` as an argument to the script in order to change the xyz-axes and grid to fit the theme. It's off by default, as I didn't want to make it too intrusive (though personally, I prefer it on). You can also pass `-s` or `--saturation` along with a float to change how saturated the colors are- default is 1, and you'll find the best results between 0.5-2, but feel free to put whatever number you like.
 
 # Images 
 
