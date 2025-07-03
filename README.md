@@ -21,3 +21,4 @@ Move the script and xml to a directory of your choosing- it should work, as long
 ![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/yellow-green.png?raw=true)
 
 
+Credit to https://github.com/hayyaoe/zenities for the dots
