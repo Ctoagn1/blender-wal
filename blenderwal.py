@@ -14,7 +14,7 @@ def modulate(val, mod): #color lightening/darkening
     b=int(val[5:7], 16)/255.0
     h,l,s=colorsys.rgb_to_hls(r, g, b)
     l=max(0.0, min(1.0, l*mod)) #bounds on brightness
-    s=max(0.0, min(1.0, s*.65/(mod*1.15))) #darker=more saturated
+    s=max(0.0, min(1.0, s*.8/(mod*1.15))) #darker=more saturated
     r, g, b=colorsys.hls_to_rgb(h, l, s)
     r=f"{int(r * 255):02x}"
     g=f"{int(g * 255):02x}"
@@ -41,16 +41,20 @@ def apply_colors(home, workingdir, blenderversion, axis_change):
         contents = file.read()
         for i in range(0, 26):
             contents = re.sub("color"+str(i)+"_", colors["color"+str(i)], contents)
-        contents = re.sub("backgroundcolor", colors["background"], contents)
-        contents = re.sub("foregroundcolor", colors["foreground"], contents)
+        contents = re.sub("backgroundcolor_", colors["background"], contents)
+        contents = re.sub("foregroundcolor_", colors["foreground"], contents)
         if axis_change:
-            contents = re.sub("x-axis-color", colors["color5"], contents)
-            contents = re.sub("y-axis-color", colors["color6"], contents)
-            contents = re.sub("z-axis-color", colors["color4"], contents)
+            contents = re.sub("x-axis-color_", colors["color5"], contents)
+            contents = re.sub("y-axis-color_", colors["color6"], contents)
+            contents = re.sub("z-axis-color_", colors["color4"], contents)
+            contents = re.sub("grid-color_", colors["color19"], contents)
+
         else:
-            contents = re.sub("x-axis-color", "#ff3352", contents)
-            contents = re.sub("y-axis-color", "#8bdc00", contents)
-            contents = re.sub("z-axis-color", "#2890ff", contents)
+            contents = re.sub("x-axis-color_", "#ff3352", contents)
+            contents = re.sub("y-axis-color_", "#8bdc00", contents)
+            contents = re.sub("z-axis-color_", "#2890ff", contents)
+            contents = re.sub("grid-color_", "#545454", contents)
+
         os.makedirs(f"{home}/.config/blender/{blenderversion}/scripts/presets/interface_theme", exist_ok=True)
     with open(f"{home}/.config/blender/{blenderversion}/scripts/presets/interface_theme/Pywal_Theme.xml", "w") as file:
         file.write(contents)
