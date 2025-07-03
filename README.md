@@ -11,3 +11,5 @@ By virtue of the theme not using set colors and instead using whatever your wall
 Move the script and xml to a directory of your choosing- it should work, as long as they're together. chmod +x if necessary, and you should be good to go.
 
 **Dependencies:**  Blender, python, and pywal. Which, if you're interested in using this, you probably already have these.
+
+**Features:** You can pass `-a` or `--axis` as an argument to the script in order to change the xyz-axes. It's off by default- I didn't want to make it too intrusive. 
