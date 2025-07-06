@@ -5,6 +5,8 @@ Pywal addon for Blender themes
 
 By virtue of the theme not using set colors and instead using whatever your wallpaper is, some themes will look better than others, but I've gotten some pretty nice ones.
 
+See `https://github.com/Ctoagn1/Blender-Wallpaper-for-all/` for a similar blender addon that works on windows/mac/linux and doesn't require pywal or any of its backends. (In order to be dependency-free, it uses the colorz backend locally with a weighted k-mean. Stick with this one if you prefer other backends.)
+
 # Usage Guide
 
 **Install:**  `git clone https://github.com/Ctoagn1/blender-wal`
