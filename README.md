@@ -1,4 +1,8 @@
 # blender-wal
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/purple.png?raw=true)
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/red.png?raw=true)
+![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/yellow-green.png?raw=true)
+
 Pywal addon for Blender themes
 
   I'm indecisive and feel the need to change my wallpaper every five minutes, so it helps having some scripts that can automate applying a matching color palette to the stuff I use. Add to your wallpaper manager or just run it manually whenever you swap wallpapers- it should appear in blender under Preferences as Pywal Theme. Alternatively, install Pywal_Theme.zip as an addon in Blender for built-in functionality, including all customization options that the script offers.
@@ -16,11 +20,5 @@ Move the script and xml to a directory of your choosing- it should work, as long
 
 **Features:** You can pass `-a` or `--axis` as an argument to the script in order to change the xyz-axes and grid to fit the theme. It's off by default, as I didn't want to make it too intrusive (though personally, I prefer it on). You can also pass `-s` or `--saturation` along with a float to change how saturated the colors are- default is 1, and you'll find the best results between 0.5-2, but feel free to put whatever number you like.
 
-# Images 
 
-![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/purple.png?raw=true)
-![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/red.png?raw=true)
-![alt text](https://github.com/Ctoagn1/blender-wal/blob/main/images/yellow-green.png?raw=true)
-
-
-Credit to https://github.com/hayyaoe/zenities for the dots
+Credit to https://github.com/hayyaoe/zenities for the dots in the photos
