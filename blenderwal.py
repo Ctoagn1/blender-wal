@@ -46,7 +46,7 @@ def apply_colors(home, workingdir, blenderversion, axis_change, saturation):
         if axis_change:
             contents = re.sub("x-axis-color_", colors["color20"], contents)
             contents = re.sub("y-axis-color_", colors["color21"], contents)
-            contents = re.sub("z-axis-color_", colors["color22"], contents)
+            contents = re.sub("z-axis-color_", colors["color18"], contents)
             contents = re.sub("grid-color_", colors["color19"], contents)
         else:
             contents = re.sub("x-axis-color_", "#ff3352", contents)
