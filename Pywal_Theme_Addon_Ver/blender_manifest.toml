@@ -1,0 +1,22 @@
+schema_version = "1.0.0"
+
+id = "Pywal_Theme"
+version = "1.0.0"
+name = "Pywal Theme"
+tagline = "Apply Pywal colors to Blender Theme"
+maintainer = "Ctoagn1"
+type = "add-on"
+
+website = "https://github.com/Ctoagn1/blender-wal/"
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+platforms = ["linux-x64"]
+
+[permissions]
+files = "Reads Pywal colors.json and writes to themes"
+
